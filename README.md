@@ -29,7 +29,7 @@ The function also needs a storage account, and a container within that storage
 account to which to write the images. This is usually created automatically
 during function deployment.
 
-Instructions for deploying to Azure Functions can be found [here](https://docs.microsoft.com/en-us/azure/azure-functions/deployment-zip-push).
+The code is intended to be deployed to an Azure Functions app running on Linux and using a Python runtime stack. Instructions to create a function app can be found [here](https://docs.microsoft.com/en-us/azure/azure-functions/functions-create-first-function-python#create-a-function-app-in-azure). Deploying requires the installation of the Azure CLI tool. Instructions for the installation can be found [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest). Once installed, navigate to the root directory and run the command `func azure functionapp publish <app-name> --build remote`, where `<app-name>` is the name of the functionapp that was created previously.
 
 Once deployed, following environment variables ('Application Settings' in Azure)
 need to be set:
