@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "Lichessify",
+    "version": "1.0",
+
+    "description": "Convert images of chessboards to playable games on lichess.org.",
+
+    "background": {
+        "scripts": ["lichessify.js"]
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "icons/chess-knight-solid.svg",
+            "32": "icons/chess-knight-solid.svg"
+        }
+    },
+    "icons": {
+        "16": "icons/chess-knight-solid.svg",
+        "32": "icons/chess-knight-solid.svg",
+        "48": "icons/chess-knight-solid.svg",
+        "96": "icons/chess-knight-solid.svg"
+    },
+    "permissions": [
+        "clipboardRead",
+        "notifications",
+        "*://lichessify.azurewebsites.net/*"
+    ]
+}
